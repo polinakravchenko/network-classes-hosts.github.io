@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Class and Max Hosts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-wrapper">
+    <div class="container-2">
+        <div>
+            <h2>Корисні посилання з визначення класу мережі, хостів ІР-адреси</h2>
+            <table>
+                <tr>
+                    <td><a href="https://dspace.chmnu.edu.ua/jspui/handle/123456789/26">Проєктування та монтаж локальних комп’ютерних мереж</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.ukraine.com.ua/uk/info/tools/my-ip/">Визначення власної IP-адреси</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://uk.wikipedia.org/wiki/IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0">Поняття "IP-адреса"</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://uk.wikipedia.org/wiki/CIDR">Безкласова маршрутизація або CIDR</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://help.keenetic.com/hc/uk/articles/213965829-%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4-%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%85%D1%83%D0%BD%D0%BA%D1%83-%D0%BA%D1%96%D0%BB%D1%8C%D0%BA%D0%BE%D1%81%D1%82%D1%96-%D1%85%D0%BE%D1%81%D1%82%D1%96%D0%B2-%D1%82%D0%B0-%D0%BF%D1%96%D0%B4%D0%BC%D0%B5%D1%80%D0%B5%D0%B6-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%96-IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B8-%D1%82%D0%B0-%D0%BC%D0%B0%D1%81%D0%BA%D0%B8">Приклад розрахунку кількості хостів та підмереж</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.e-helper.com.ua/node/985">Основи функціонування протоколу TCP/IP</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://hackyourmom.com/osvita/shpargalka-podil-merezhi-na-pidmerezhi/">Поділ мережі на підмережі</a></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><a href="https://web.posibnyky.vntu.edu.ua/fitki/3yarovijk_komp_merezhi/1.4.html">Застосування масок під час ІР-адресації</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container-1">
+        <div>
+            <h2>Визначення класу мережі та максимальної кількості ПК у мережі</h2>
+            <label for="ipAddress">Уведіть IP-адресу:</label>
+            <input type="text" id="ipAddress" placeholder="напр., 192.168.1.1"><br>
+            <label for="cidrPrefix">Уведіть префікс CIDR:</label>
+            <input type="text" id="cidrPrefix" placeholder="напр., 24"><br>
+            <button onclick="calculate()">Розрахувати</button>
+            <div id="output"></div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
